@@ -20,6 +20,7 @@ const theme = {
   teams: "350px",
   foot: "375px",
   max: "400px",
+  blogNav: "610px",
   min: "520px",
   make: "548px",
   mobile: "500px",

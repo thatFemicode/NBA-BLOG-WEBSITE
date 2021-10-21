@@ -5,7 +5,7 @@ export const AuthStyled = styled.main`
   display: flex;
   flex-direction: row;
   @media screen and (max-width: 800px) {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .auth {
     &-form-container-fields {
@@ -170,7 +170,9 @@ export const AuthStyled = styled.main`
         height: 100%;
         object-fit: cover;
         @media screen and (max-width: 800px) {
-          /* width:50% */
+          /* width: 100%;
+          height: 100%; */
+          /* object-fit: contain; */
         }
       }
     }

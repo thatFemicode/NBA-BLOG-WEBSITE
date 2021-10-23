@@ -9,6 +9,8 @@ import Auth from "./Pages/Auth";
 import Teams from "./Pages/Teams";
 import Players from "./Pages/Players";
 import Blog from "./Pages/Blog";
+import PostDetail from "./Pages/PostDetail";
+
 const theme = {
   colors: {
     header: "#ebfbff",
@@ -48,6 +50,7 @@ function App() {
             <Route path="/players" exact component={Players} />
             <Route path="/auth" exact component={Auth} />
             <Route path="/blog" exact component={Blog} />
+            <Route path="/postdetail" exact component={PostDetail} />
           </ThemeProvider>
         </Switch>
       </BrowserRouter>

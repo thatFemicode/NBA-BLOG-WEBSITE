@@ -10,6 +10,11 @@ export const BlogNavStyled = styled.nav`
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 
+  .logo {
+    @media (max-width: ${({ theme }) => theme.desktop}) {
+      width: 60%;
+    }
+  }
   .items {
     justify-content: space-evenly;
     display: flex;

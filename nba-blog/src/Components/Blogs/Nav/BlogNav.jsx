@@ -8,7 +8,7 @@ const BlogNav = () => {
   return (
     <BlogNavStyled>
       <Link to="/">
-        <img src={logo} alt="" />
+        <img src={logo} alt="" className="logo" />
       </Link>
       <div className="items">
         <div className="items-image">O</div>

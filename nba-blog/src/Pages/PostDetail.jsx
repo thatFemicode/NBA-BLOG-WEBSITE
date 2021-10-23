@@ -1,10 +1,11 @@
 import React from "react";
-import BlogMain from "../Components/Blogs/BlogMain";
+import PostDetails from "../Components/Blogs/BlogPost/PostDetails/PostDetails";
 import { OuterLayout } from "../Layout/Layout";
-import { BlogStyled } from "./Styled/BlogStyled";
+import { PostDetailStyled } from "./Styled/PostDetailStyled";
 import { TweenMax, TimelineMax, Power3, Power4 } from "gsap";
 import { useRef, useEffect } from "react";
-const Blog = () => {
+import { TeamsStyled } from "./Styled/Teams";
+const PostDetail = () => {
   let screen = useRef(null);
   let body = useRef(null);
   useEffect(() => {
@@ -44,14 +45,14 @@ const Blog = () => {
         <div className="load-screen" ref={(el) => (screen = el)}></div>
       </div>
       <div data-barba="container" ref={(el) => (body = el)} className="Headd">
-        <BlogStyled>
+        <PostDetailStyled>
           <OuterLayout>
-            <BlogMain />
+            <PostDetails />
           </OuterLayout>
-        </BlogStyled>
+        </PostDetailStyled>
       </div>
     </>
   );
 };
 
-export default Blog;
+export default PostDetail;

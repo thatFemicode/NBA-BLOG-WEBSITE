@@ -46,6 +46,9 @@ export const PlayerStyled = styled.section`
     align-items: center;
     overflow-x: auto;
     justify-content: center;
+    @media (max-width: ${({ theme }) => theme.min}) {
+      justify-content: unset;
+    }
     .tabs-btn {
       padding-top: 0.4rem;
       padding-bottom: 0.4rem;

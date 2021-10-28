@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const BlogMainStyled = styled.div`
   width: 100%;
@@ -14,7 +14,7 @@ export const BlogMainStyled = styled.div`
     &-form {
       flex: 2 0;
       padding: 2rem;
-      display: flex;
+      /* display: flex; */
       align-items: center;
       @media (max-width: ${({ theme }) => theme.min}) {
         flex-direction: column;
@@ -53,9 +53,11 @@ export const BlogMainStyled = styled.div`
   .blog-main {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 1rem;
     margin-top: 3rem;
     @media (min-width: ${({ theme }) => theme.min}) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
     }
     @media (min-width: ${({ theme }) => theme.desktop}) {
       grid-template-columns: repeat(3, minmax(0, 1fr));

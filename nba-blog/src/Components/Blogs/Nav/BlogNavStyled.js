@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const BlogNavStyled = styled.nav`
   max-width: 75rem;
@@ -45,6 +45,15 @@ export const BlogNavStyled = styled.nav`
       @media (min-width: ${({ theme }) => theme.blogNav}) {
         display: block;
       }
+    }
+    button {
+      font-size: 1rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 1rem;
+      border-color: transparent;
+      color: white;
+      background-color: #1d428a;
+      cursor: pointer;
     }
   }
 `;

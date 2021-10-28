@@ -1,25 +1,25 @@
-import React from "react";
-import { InnerLayout } from "../../Layout/Layout";
-import { HeroStyled } from "./HeroStyled";
-import { Link } from "react-router-dom";
-import { gsap } from "gsap";
-import { useEffect, useRef } from "react";
-import AnimatedHeroButton from "./AnimatedHeroButton";
+import React from 'react';
+import { InnerLayout } from '../../Layout/Layout';
+import { HeroStyled } from './HeroStyled';
+import { Link } from 'react-router-dom';
+import { gsap } from 'gsap';
+import { useEffect, useRef } from 'react';
+import AnimatedHeroButton from './AnimatedHeroButton';
 // import kyrie from "../../img/kyrie.webp";
-import logo from "../../img/nba logo.svg";
+// import logo from "../../img/nba logo.svg";
 // import Giannis from "./Giannis.svg";
 // import ball from "../../img/basketballs.svg";
-import ball from "./Allen.svg";
+import ball from './Allen.svg';
 // import Players from "./Players.svg";
 // import Rim from "./Rimd.svg";
-import Kukoc from "./Kukoc.svg";
+import Kukoc from './Kukoc.svg';
 const Hero = () => {
   const images = useRef();
   useEffect(() => {
     const kobe = images.current;
     gsap.to(kobe, {
       duration: 1,
-      ease: "power2.out",
+      ease: 'power2.out',
       // onRepeat: repeatFunction,
       yoyo: true,
       y: -50,
@@ -52,7 +52,7 @@ const Hero = () => {
                   disabled
                 />
                 <Link to="/auth">
-                  <AnimatedHeroButton name={"Get Access 🏀"} />
+                  <AnimatedHeroButton name={'Get Access 🏀'} />
                 </Link>
               </form>
             </div>

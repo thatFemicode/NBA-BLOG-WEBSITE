@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const BlogFormStyled = styled.div`
   h2 {
@@ -54,7 +54,7 @@ export const BlogFormStyled = styled.div`
             font-size: 14px;
             outline: none;
             transition: all 150ms ease-in-out 0s;
-            width: 85%;
+            width: 60%;
             background: #fff;
             @media screen and (max-width: 520px) {
               width: 70%;
@@ -81,7 +81,7 @@ export const BlogFormStyled = styled.div`
             font-size: 14px;
             outline: none;
             transition: all 150ms ease-in-out 0s;
-            width: 85%;
+            width: 60%;
             background: #fff;
             @media screen and (max-width: 520px) {
               width: 70%;
@@ -136,5 +136,18 @@ export const BlogFormStyled = styled.div`
         }
       }
     }
+  }
+  .main-text {
+    max-width: 400px;
+    margin-right: 2rem;
+    p {
+      text-align: justify;
+      max-width: 300px;
+      white-space: break-spaces;
+    }
+  }
+  .authentication-text {
+    font-size: 1rem;
+    /* display: none; */
   }
 `;

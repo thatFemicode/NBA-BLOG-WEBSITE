@@ -4,8 +4,8 @@ import { OuterLayout } from '../Layout/Layout';
 import { BlogStyled } from './Styled/BlogStyled';
 import { TweenMax, TimelineMax, Power3, Power4 } from 'gsap';
 import { useRef, useEffect } from 'react';
-import { useDispatch } from 'react-redux';
-import { getPosts } from '../actions/post';
+// import { useDispatch } from 'react-redux';
+// import { getPosts } from '../actions/post';
 const Blog = () => {
   let screen = useRef(null);
   let body = useRef(null);

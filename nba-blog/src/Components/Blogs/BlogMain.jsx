@@ -4,7 +4,7 @@ import { BlogMainStyled } from './BlogMainStyled';
 import BlogNav from './Nav/BlogNav';
 import Teams from './BlogForm/Teams.svg';
 import BlogForm from './BlogForm/BlogForm';
-import BlogSearch from './BlogSearch/BlogSearch';
+// import BlogSearch from './BlogSearch/BlogSearch';
 import Post from './BlogPost/Post';
 import { useSelector } from 'react-redux';
 import SkeletonPost from './Skeleton/SkeletonPost';
@@ -18,8 +18,8 @@ const Blogmain = () => {
   useEffect(() => {
     dispatch(getPosts());
   }, [currentId]);
-  const posts = useSelector((state) => state.posts);
-  console.log(posts);
+  const { posts } = useSelector((state) => state.posts);
+  // console.log(posts);
   return (
     <BlogMainStyled>
       <BlogNav />
@@ -27,7 +27,7 @@ const Blogmain = () => {
         <div className="blog-header">
           <div className="blog-header-form">
             <BlogForm currentId={currentId} setCurrentId={setCurrentId} />
-            <BlogSearch />
+            {/* <BlogSearch /> */}
           </div>
           <div className="blog-header-image">
             <img src={Teams} alt="" />

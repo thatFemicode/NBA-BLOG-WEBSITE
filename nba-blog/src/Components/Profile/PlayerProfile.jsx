@@ -1,14 +1,14 @@
-import React from "react";
-import { PlayerStyled } from "./PlayerProfileStyled";
-import bgCircle from "../../img/lines.svg";
-import { InnerLayout } from "../../Layout/Layout";
-import content from "./data";
-import { useState, useEffect } from "react";
-import Kobe from "./Kobe/Kobe";
-import Lebron from "./Lebron/Lebron";
-import Kareem from "./Kareem/Kareem";
-import Jordan from "./Jordan/Jordan";
-import Steph from "./Steph/Steph";
+import React from 'react';
+import { PlayerStyled } from './PlayerProfileStyled';
+// import bgCircle from "../../img/lines.svg";
+import { InnerLayout } from '../../Layout/Layout';
+import content from './data';
+import { useState, useEffect } from 'react';
+import Kobe from './Kobe/Kobe';
+import Lebron from './Lebron/Lebron';
+import Kareem from './Kareem/Kareem';
+import Jordan from './Jordan/Jordan';
+import Steph from './Steph/Steph';
 const PlayerProfile = () => {
   const [info, setInfo] = useState(content);
   const [value, setValue] = useState(info[0]);
@@ -42,7 +42,7 @@ const PlayerProfile = () => {
                 <button
                   key={item.id}
                   className={`tabs-btn ${
-                    info[index] === value && "active-btn"
+                    info[index] === value && 'active-btn'
                   } `}
                   onClick={() => {
                     setValue(info[index]);

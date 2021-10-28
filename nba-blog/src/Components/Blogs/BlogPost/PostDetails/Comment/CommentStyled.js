@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 export const CommentStyled = styled.div`
   display: flex;
   justify-content: space-between;
@@ -11,6 +11,12 @@ export const CommentStyled = styled.div`
     margin-right: 30px;
     @media (max-width: ${({ theme }) => theme.desktop}) {
       height: 200px;
+    }
+    h6 {
+      margin-bottom: 1rem;
+    }
+    .comment-name {
+      text-transform: capitalize;
     }
   }
   .comments-box {
@@ -26,7 +32,17 @@ export const CommentStyled = styled.div`
         outline: none;
         border-radius: 1rem;
         margin-bottom: 1rem;
+        padding: 1rem;
       }
     }
+  }
+  button {
+    font-size: 1rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    border-color: transparent;
+    color: white;
+    background-color: #1d428a;
+    cursor: pointer;
   }
 `;

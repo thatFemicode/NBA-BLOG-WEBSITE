@@ -1,10 +1,13 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const BlogSearchStyled = styled.div`
   /* padding-top: 1.3rem; */
-  margin-top: 3rem;
+  /* margin-top: -12.5rem; */
   @media screen and (max-width: 520px) {
-    margin-left: -4rem;
+    margin-left: -3rem;
+  }
+  @media screen and (min-width: 768px) {
+    /* margin-top: -12.5rem; */
   }
   .blog-search-container-fields-content-input {
     display: flex;

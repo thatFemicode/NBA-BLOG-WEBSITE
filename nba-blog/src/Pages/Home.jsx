@@ -1,16 +1,16 @@
-import React from "react";
-import Navbar from "../Components/Navbar/Navbar";
-import { BrowserRouter, Switch, Router, Route } from "react-router-dom";
-import Hero from "../Components/Hero/Hero";
-import Community from "../Components/Comm/Community";
-import PlayerProfile from "../Components/Profile/PlayerProfile";
-import Faq from "../Components/FAQ/Faq";
-import FooterMain from "../Components/Footer/FooterMain";
-import Footer from "../Components/MainFooter/Footer";
-import styled from "styled-components";
-import { OuterLayout } from "../Layout/Layout";
-import { TweenMax, TimelineMax, Power3, Power4 } from "gsap";
-import { useRef, useEffect } from "react";
+import React from 'react';
+import Navbar from '../Components/Navbar/Navbar';
+// import { BrowserRouter, Switch, Router, Route } from "react-router-dom";
+import Hero from '../Components/Hero/Hero';
+import Community from '../Components/Comm/Community';
+import PlayerProfile from '../Components/Profile/PlayerProfile';
+import Faq from '../Components/FAQ/Faq';
+import FooterMain from '../Components/Footer/FooterMain';
+import Footer from '../Components/MainFooter/Footer';
+import styled from 'styled-components';
+import { OuterLayout } from '../Layout/Layout';
+import { TweenMax, TimelineMax, Power3, Power4 } from 'gsap';
+import { useRef, useEffect } from 'react';
 const MainStyled = styled.main``;
 const Home = () => {
   let screen = useRef(null);
@@ -19,29 +19,29 @@ const Home = () => {
     const tl = new TimelineMax();
     tl.to(screen, {
       duration: 1.2,
-      width: "100%",
-      left: "0%",
+      width: '100%',
+      left: '0%',
       ease: Power3.easeInOut,
     });
     tl.to(screen, {
       duration: 1,
-      left: "100%",
+      left: '100%',
       ease: Power3.easeInOut,
       delay: 0.3,
     });
-    tl.set(screen, { left: "-100%" });
+    tl.set(screen, { left: '-100%' });
     TweenMax.to(body, 0.3, {
       css: {
-        opacity: "1",
-        pointerEvents: "auto",
+        opacity: '1',
+        pointerEvents: 'auto',
         ease: Power4.easeInOut,
       },
     }).delay(2);
     return () => {
       TweenMax.to(body, 1, {
         css: {
-          opacity: "0",
-          pointerEvents: "none",
+          opacity: '0',
+          pointerEvents: 'none',
         },
       });
     };

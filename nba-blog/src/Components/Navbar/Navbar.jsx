@@ -1,29 +1,27 @@
-import React from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { useState, useEffect } from "react";
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { useState } from 'react';
 import {
   openNavbar,
   closeNavbar,
   openSubMenu,
   closeSubMenu,
-} from "../../redux/actions/navbar";
-import sublinks from "../../data";
-import Submenu from "./Submenu";
-import PrimaryButton from "../Button/PrimaryButton";
-import { NavbarStyled } from "./styled/Navbar";
-import nba from "../../img/logo/nbalogo.svg";
-import { FaBars } from "react-icons/fa";
-import SideBar from "./SideBar";
-import { Link } from "react-router-dom";
+} from '../../redux/actions/navbar';
+import sublinks from '../../data';
+import Submenu from './Submenu';
+import PrimaryButton from '../Button/PrimaryButton';
+import { NavbarStyled } from './styled/Navbar';
+import nba from '../../img/logo/nbalogo.svg';
+import { FaBars } from 'react-icons/fa';
+import SideBar from './SideBar';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const dispatch = useDispatch();
-  const { isOpen, isSubmenuOpen, isSideBarOpen } = useSelector(
-    (state) => state.navbar
-  );
+  const { isOpen } = useSelector((state) => state.navbar);
   console.log(isOpen);
   const [location, setLocation] = useState({});
-  const [page, setPage] = useState({ page: "", links: [] });
+  const [page, setPage] = useState({ page: '', links: [] });
   const openLinkMenu = (text, coor) => {
     const page = sublinks.find((link) => link.page === text);
     console.log(page);
@@ -33,11 +31,11 @@ const Navbar = () => {
   };
   const openNav = () => {
     dispatch(openNavbar());
-    document.body.classList.add("no-scroll");
+    document.body.classList.add('no-scroll');
   };
   const closeNav = () => {
     dispatch(closeNavbar());
-    document.body.classList.remove("no-scroll");
+    document.body.classList.remove('no-scroll');
   };
   const displayMenu = (e) => {
     const page = e.target.textContent;
@@ -50,7 +48,7 @@ const Navbar = () => {
     openLinkMenu(page, { center, bottom });
   };
   const handleSubmenu = (e) => {
-    if (!e.target.classList.contains("link-btn" || "links")) {
+    if (!e.target.classList.contains('link-btn' || 'links')) {
       dispatch(closeSubMenu());
     }
   };
@@ -81,7 +79,7 @@ const Navbar = () => {
           </Link>
         </li>
         <Link to="/auth">
-          <PrimaryButton name={"Sign up"} />
+          <PrimaryButton name={'Sign up'} />
         </Link>
       </ul>
 

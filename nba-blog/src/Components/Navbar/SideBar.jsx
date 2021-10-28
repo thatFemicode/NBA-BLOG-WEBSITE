@@ -1,14 +1,14 @@
-import React from "react";
-import { FaTimes } from "react-icons/fa";
-import { useSelector } from "react-redux";
-import subLinks from "../../data";
-import { SidebarStyled } from "./styled/Sidebar";
-import { Link } from "react-router-dom";
-import Rodman from "../../img/Rodman.gif";
-import Steph from "../../img/Steph.jpg";
-import Kobe from "../../img/Kobe.webp";
-import nba from "../../img/logo/nbalogo.svg";
-import ball from "../../img/basket.svg";
+import React from 'react';
+import { FaTimes } from 'react-icons/fa';
+import { useSelector } from 'react-redux';
+import subLinks from '../../data';
+import { SidebarStyled } from './styled/Sidebar';
+import { Link } from 'react-router-dom';
+// import Rodman from "../../img/Rodman.gif";
+// import Steph from "../../img/Steph.jpg";
+// import Kobe from "../../img/Kobe.webp";
+// import nba from "../../img/logo/nbalogo.svg";
+import ball from '../../img/basket.svg';
 
 const SideBar = ({ closeNav }) => {
   console.log(subLinks);
@@ -16,7 +16,7 @@ const SideBar = ({ closeNav }) => {
   console.log(isOpen);
   return (
     <SidebarStyled
-      className={`${isOpen ? "sidebar-wrapper show" : "sidebar-wrapper"}`}
+      className={`${isOpen ? 'sidebar-wrapper show' : 'sidebar-wrapper'}`}
     >
       <div className="sidebar">
         <button className="close-btn" onClick={closeNav}>

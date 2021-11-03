@@ -13,6 +13,10 @@ app.use(cors());
 
 app.use("/posts", postRoutes);
 app.use("/user", userRoutes);
+
+app.get("/", (req, res) => {
+  res.send("APP IS RUNNING");
+});
 // 3RD sTEP
 const CONNECTION_URL =
   "mongodb+srv://Ogunleye:tumininu10@cluster0.84if6.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";

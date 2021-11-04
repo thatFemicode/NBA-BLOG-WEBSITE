@@ -1,0 +1,2 @@
+# NBA-BLOG-WEBSITE
+A Blog type Website that focuses solely on the NBA, users can Signup, Login, Like and comment on posts while logged in. Backend built with Nodejs and express, users data are stored in SQL data Base (MongoDB) after signing up, User can create, Edit and delete their personal post. Post also includes Pictures of Players teams etc. Sign up and discuss about your Favourite player or team in the NBA

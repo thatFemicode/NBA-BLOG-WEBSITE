@@ -2,7 +2,8 @@ import axios from 'axios';
 
 // const url = 'http://localhost:5000/posts';
 const API = axios.create({
-  baseURL: 'http://localhost:5000',
+  // baseURL: 'http://localhost:5000',
+  baseURL: 'https://nbablogapp.herokuapp.com/',
 });
 API.interceptors.request.use((req) => {
   // We re simply connecting this to the backed to send the user

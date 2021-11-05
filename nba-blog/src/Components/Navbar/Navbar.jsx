@@ -19,12 +19,12 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   const dispatch = useDispatch();
   const { isOpen } = useSelector((state) => state.navbar);
-  console.log(isOpen);
+  // console.log(isOpen);
   const [location, setLocation] = useState({});
   const [page, setPage] = useState({ page: '', links: [] });
   const openLinkMenu = (text, coor) => {
     const page = sublinks.find((link) => link.page === text);
-    console.log(page);
+    // console.log(page);
     setPage(page);
     setLocation(coor);
     dispatch(openSubMenu());
@@ -42,7 +42,7 @@ const Navbar = () => {
     const tempBtn = e.target.getBoundingClientRect();
     const center = (tempBtn.left + tempBtn.right) / 2;
     const bottom = tempBtn.bottom - 3;
-    console.log(bottom);
+    // console.log(bottom);
     // console.log(page);
     // console.log(tempBtn);
     openLinkMenu(page, { center, bottom });

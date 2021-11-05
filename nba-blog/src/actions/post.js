@@ -80,7 +80,7 @@ export const deletePost = (id) => async (dispatch) => {
 export const likePost = (id) => async (dispatch) => {
   try {
     const { data } = await api.likePost(id);
-    console.log(data);
+    // console.log(data);
     dispatch({ type: LIKE, payload: data });
   } catch {}
 };
@@ -88,7 +88,7 @@ export const commentPost = (value, id) => async (dispatch) => {
   // value and id are coming from the commentsection dispatch
   try {
     const { data } = await api.comment(value, id);
-    console.log(data);
+    // console.log(data);
     dispatch({ type: COMMENT, payload: data });
     // After we dispatch this action, we also have to return the newswt comment coming in
     return data.comments;

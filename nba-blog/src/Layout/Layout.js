@@ -1,10 +1,10 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const OuterLayout = styled.section`
   width: 90%;
   margin: 0 auto;
   padding: 1rem 1rem;
-  overflow-x: hidden;
+  overflow: hidden;
 `;
 export const InnerLayout = styled.section`
   padding: 2rem 2rem;

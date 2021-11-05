@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux';
 import { commentPost } from '../../../../../actions/post';
 // import PrimaryButton from '../../../../Button/PrimaryButton';
 const CommentSection = ({ post }) => {
-  console.log(post);
+  // console.log(post);
   const [comments, setComments] = useState(post?.comments);
   // console.log(comments);
   const [comment, setComment] = useState('');

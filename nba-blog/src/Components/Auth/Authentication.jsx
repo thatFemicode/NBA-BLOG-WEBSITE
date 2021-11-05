@@ -29,7 +29,7 @@ const Authentication = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(form);
+    // console.log(form);
     // two types of submitnone for the signup and another fot the signin
     if (isSignup) {
       // We are going to dispatch an action

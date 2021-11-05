@@ -11,9 +11,9 @@ import { Link } from 'react-router-dom';
 import ball from '../../img/basket.svg';
 
 const SideBar = ({ closeNav }) => {
-  console.log(subLinks);
+  // console.log(subLinks);
   const { isOpen } = useSelector((state) => state.navbar);
-  console.log(isOpen);
+  // console.log(isOpen);
   return (
     <SidebarStyled
       className={`${isOpen ? 'sidebar-wrapper show' : 'sidebar-wrapper'}`}
@@ -25,7 +25,7 @@ const SideBar = ({ closeNav }) => {
         <div className="sidebar-links">
           {subLinks.map((item, index) => {
             const { links, page } = item;
-            console.log(links);
+            // console.log(links);
 
             return (
               <Link

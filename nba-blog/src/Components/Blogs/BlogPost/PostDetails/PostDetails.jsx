@@ -14,7 +14,7 @@ const PostDetails = () => {
   const { post } = useSelector((state) => state.posts);
   const [poster, setPoster] = useState(post);
   // console.log(isLoading);
-  console.log(post);
+  // console.log(post);
   const dispatch = useDispatch();
   // const history = useHistory();
   const { id } = useParams();

@@ -32,7 +32,7 @@ const BlogForm = ({ currentId, setCurrentId }) => {
   // }, [post]);
   useEffect(() => {
     // if (!post?.title) clear();
-    console.log(!post?.title);
+    // console.log(!post?.title);
     if (post) setPostData(post);
   }, [post]);
   // console.log(postData);
